@@ -1,0 +1,135 @@
+{
+  "layer": "top",
+  "position": "top",
+  "spacing": 2,
+  "height": 1,
+  "margin-top": 7,
+  //"margin-left": 400,
+  //"margin-right": 400,
+
+//  "modules-left": [
+     //"custom/spacer", 
+     //"custom/lock"
+     //"custom/separator", 
+     //"hyprland/workspaces"
+//  ],
+
+  "modules-center": [
+     "custom/spacer",
+     "clock",
+     //"custom/spacer", 
+     //"custom/lock", 
+     //"custom/separator", 
+     "hyprland/workspaces", 
+     "mpris",
+     //"hyprland/workspaces",
+     "wireplumber",
+     //"backlight",
+     "battery",
+     "custom/lock",
+     "custom/spacer"
+  ],
+
+  "modules-right": [
+    "custom/spacer",
+    "tray",
+    //"wireplumber",
+    "backlight",
+    //"battery",
+    //"clock",
+    "custom/notification",
+    //"custom/lock",
+    //"custom/power"
+    "custom/spacer"
+  ],
+
+  "battery": {
+    "states": {
+        "warning": 45,
+        "critical": 30
+    },
+    "format": "{icon}",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-warning": "{icon} {capacity}%",
+    "format-critical": "{icon} {capacity}%",
+    "format-icons": ["", "", "", "", ""],
+    "tooltip": true,
+    "tooltip-format": "{capacity}%"
+  },
+
+  "tray": {
+    "icon-size": 16,
+    "spacing": 6
+  },
+
+  "custom/spacer": {
+     "format": " ",
+     "tooltip": false
+  },
+
+  "custom/tab": {
+    "format": "[Z]",
+    "on-click": "rofi -show drun"
+  },
+
+  "custom/separator": {
+    "format": "|",
+    "tooltip": false
+  },
+
+    "hyprland/workspaces": {
+    "format": "{name}",
+    "on-click": "activate",
+    "persistent-workspaces": {
+        "1": []
+    }
+  },
+
+  "mpris": {
+    "format-playing": "{status_icon} {dynamic}",
+    "format-paused": "{status_icon} {dynamic}",
+    "format-stopped": "Nothing is playing",
+    "dynamic-order": ["title", "artist"],
+    "status-icons": {
+        "playing": "⏸ ",
+        "paused": "▶ "
+    },
+    "max-length": 30
+    //"ellipsis": "...",
+    //"dynamic-lens": 40
+  },
+
+  "tray": {
+    "icon-size": 16,
+    "spacing": 6
+  },
+
+  "wireplumber": {
+    "tooltip": true,
+    "tooltip-format": "{volume}%",
+    "format": "{icon}",
+    "format-muted": "Muted",
+    "on-click": "pavucontrol",
+    "max-volume": 100,
+    "format-icons": {
+        "headphone": "",
+        "headset": "  ",
+        "default": ["", "", ""]
+     }
+  },
+
+  "clock": {
+    "timezone": "Asia/Jakarta",
+    "format": "{:%H:%M}",
+    "tooltip": true,
+    "tooltip-format": "{:%a, %d %B %Y}"
+  },
+
+  "custom/lock": {
+    "format": " ",
+    "on-click": "hyprlock",
+    "tooltip": true,
+    "tooltip-format": "Lock Screen"
+  }
+}

@@ -1,0 +1,89 @@
+* {
+    font-family: "Jetbrains Mono", monospace;
+    font-weight: 800;
+    font-size: 13px;
+    color: #F6F5F4;
+}
+
+.modules-center {
+   background: #1f1f1f;
+   border-radius: 20px;
+}
+
+.modules-right {
+   background: transparent;
+   border-radius: 20px;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+#workspaces,
+#mpris,
+#battery,
+#wireplumber,
+#network,
+#clock,
+#tray,
+#custom-launcher,
+#custom-lock {
+    background: transparent;
+    border: none;
+    margin: 0 4px;
+    padding: 4px 2px;
+    border-radius: 0;
+}
+
+#workspaces {
+    padding: 0 4px;
+}
+
+#workspaces button {
+    padding: 0px 3px;
+    margin: 4px 1px;
+    border-radius: 50%;
+    background: transparent;
+    color: #665447;
+    font-size: 5px;
+}
+
+#workspaces button.active {
+    color: #E0B875;
+    background: #3A2D24;
+}
+
+#workspaces button:hover {
+    background: #3A2D24;
+    color: #D8B982;
+}
+
+#workspaces button.urgent {
+    background: #8C4A3A;
+    color: #F0D6A3;
+    border-radius: 4px;
+}
+
+#wireplumber.muted {
+    opacity: 0.55;
+}
+
+#custom-lock {
+    color: #F6F5F4;
+}
+
+#custom-lock:hover {
+    color: #E0B875;
+}
+
+tooltip {
+    background: #1f1f1f;
+    border: none;
+    border-radius: 20px;
+}
+
+tooltip label {
+    padding: 0px 3px;
+    color: #ffffff;
+    font-size: 11px;
+}
